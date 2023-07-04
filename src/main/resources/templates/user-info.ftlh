@@ -9,7 +9,20 @@
         <br>
         <h2>${user.name}</h2>
         <br>
-        Номер телефона: <b>${user.phoneNumber}</b>
+        <#if userByPrincipal.active>
+            <p style="text-align: center">
+                <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    Показать номер продавца
+                </a>
+            </p>
+            <div class="collapse" id="collapseExample">
+                <div class="card card-body">
+                    <p style="text-align: center"><b>${user.phoneNumber}</b></p>
+                </div>
+            </div>
+        <#else>
+            <p style="text-align: center">Войдите в аккаунт что связаться с продавцом :</p>
+        </#if>
     </div>
     <br>
     <hr>

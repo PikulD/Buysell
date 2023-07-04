@@ -19,6 +19,15 @@
             <label for="password">Пароль</label>
             <input type="password" class="form-control" id="password" required name="password">
         </div>
+        <div class="col-12">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                <label class="form-check-label" for="invalidCheck2">
+                    Я даю свое согласие на обработку введенной персональной информации в соответствии с Федеральным
+                    Законом №152-ФЗ от 27.07.2006 "О персональных данных".
+                </label>
+            </div>
+        </div>
         <input type="hidden" name="_csrf" value="${_csrf.token}">
         <button type="submit" style="width: 100%" class="btn btn-dark">Зарегистрироваться</button>
     </form>

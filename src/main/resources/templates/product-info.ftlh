@@ -39,7 +39,21 @@
     <hr>
     <p><h1 style="text-align: center">${product.title} | ${product.price} ₽</h1></p>
     <p style="text-align: center">${product.description}</p>
-    <p style="text-align: center">Номер телефона продавца: <b>${authorProduct.phoneNumber}</b></p>
+
+    <#if user.active>
+    <p style="text-align: center">
+        <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+            Показать номер продавца
+        </a>
+    </p>
+    <div class="collapse" id="collapseExample">
+        <div class="card card-body">
+            <p style="text-align: center"><b>${authorProduct.phoneNumber}</b></p>
+        </div>
+    </div>
+    <#else>
+        <p style="text-align: center">Войдите в аккаунт что связаться с продавцом :</p>
+    </#if>
 
     <hr>
     <p style="text-align: center">

@@ -10,7 +10,9 @@
                     <option value="Москва">Москва</option>
                     <option value="Красноярск">Красноярск</option>
                     <option value="Казань">Казань</option>
+                    <option value="Пенза">Пенза</option>
                 </select>
+
             </div>
             <div class="form-group col-md-10">
                 <label for="searchWord">Поиск по объявлениям</label>

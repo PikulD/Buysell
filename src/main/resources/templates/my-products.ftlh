@@ -31,6 +31,8 @@
                     <option value="Москва">Москва</option>
                     <option value="Красноярск">Красноярск</option>
                     <option value="Казань">Казань</option>
+                    <option value="Пенза">Пенза</option>
+
 
                 </select>
             </div>
